@@ -31,11 +31,6 @@ class PopupEntity extends DocumentEntity
         return 'bs.window-stack';
     }
 
-    public function section(): string
-    {
-        return __('Documents');
-    }
-
     public function sort(): int
     {
         return 5900;
