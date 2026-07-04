@@ -15,5 +15,6 @@
     "Waiting": "대기 중",
     "Approved": "승인됨",
     "Days to hide the popup after the visitor chooses \"do not show again\".": "방문자가 \"다시 보지 않기\"를 선택한 후 팝업을 숨길 일수입니다.",
-    "JSON style overrides (width, position, ...).": "JSON 스타일 재정의 (width, position, ...)."
+    "JSON style overrides (width, position, ...).": "JSON 스타일 재정의 (width, position, ...).",
+    "Do not show again today": "오늘 하루 보지 않기"
 }

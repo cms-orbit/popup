@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useT } from '@cms-orbit/core/lib/i18n';
 
 export interface OrbitPopup {
     id: number;
@@ -58,6 +59,7 @@ export interface OrbitPopupsProps {
  * overlays. Drop this component into a host layout to enable site-wide popups.
  */
 export function OrbitPopups({ endpoint = '/popups/active' }: OrbitPopupsProps) {
+    const t = useT();
     const [popups, setPopups] = useState<OrbitPopup[]>([]);
 
     useEffect(() => {
@@ -124,14 +126,14 @@ export function OrbitPopups({ endpoint = '/popups/active' }: OrbitPopupsProps) {
                                 className="text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200"
                                 onClick={() => close(popup, true)}
                             >
-                                오늘 하루 보지 않기
+                                {t('Do not show again today')}
                             </button>
                             <button
                                 type="button"
                                 className="rounded bg-neutral-900 px-3 py-1 text-white dark:bg-neutral-100 dark:text-neutral-900"
                                 onClick={() => close(popup, false)}
                             >
-                                닫기
+                                {t('Close')}
                             </button>
                         </div>
                     </div>
