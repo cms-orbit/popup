@@ -21,6 +21,15 @@ php artisan migrate
 
 패키지는 `cms-orbit/core`를 의존하며, 설치 후 `Documents` 섹션에 팝업 엔티티가 자동 등록됩니다.
 
+## 호스트 설정
+
+| 작업 | 필수 여부 |
+| --- | --- |
+| `composer require cms-orbit/popup` + `php artisan migrate` | **필수** |
+| `php artisan orbit:frontend-sync` | **필수** (`@cms-orbit/popup` alias) |
+| 레이아웃에 `<OrbitPopups />` 1회 렌더 | **필수** (어느 공개 레이아웃에 띄울지는 호스트가 선택) |
+| API 라우트 수동 등록 | **불필요** |
+
 ## 빠른 시작
 
 ### 1. 관리자에서 팝업 작성

@@ -2,6 +2,17 @@
 
 이 문서는 `cms-orbit/popup`의 릴리스 노트를 기록합니다.
 
+## 4.0.0-beta5 - 2026-07-05
+
+### 추가
+
+- Laravel Boost 가이드라인·스킬(`popup-development`)과 Vite alias manifest(`resources/orbit/frontend.json`)를 추가했습니다.
+
+### 개선
+
+- README **호스트 설정** 표를 추가해 필수 작업(`migrate`, `orbit:frontend-sync`, `<OrbitPopups />` 1줄)과 불필요한 수동 라우트 편집을 구분했습니다.
+- `cms-orbit/core` `4.0.0` 정식 릴리스에 맞춰 의존성을 정렬했습니다.
+
 ## 4.0.0-beta4 - 2026-07-04
 
 ### 개선
