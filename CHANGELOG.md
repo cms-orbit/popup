@@ -2,6 +2,13 @@
 
 이 문서는 `cms-orbit/popup`의 릴리스 노트를 기록합니다.
 
+## 4.0.1 - 2026-07-05
+
+### 변경
+
+- 팝업 본문 편집을 `RichText`(Notion형 블록 에디터)로 전환했습니다.
+- `cms-orbit/core` `4.0.1` 필수 (Quill 필드 제거 breaking change).
+
 ## 4.0.0 - 2026-07-05
 
 ### 변경

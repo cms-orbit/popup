@@ -10,7 +10,7 @@ use CmsOrbit\Core\Screen\Fields\CheckBox;
 use CmsOrbit\Core\Screen\Fields\Code;
 use CmsOrbit\Core\Screen\Fields\DateTimer;
 use CmsOrbit\Core\Screen\Fields\Input;
-use CmsOrbit\Core\Screen\Fields\Quill;
+use CmsOrbit\Core\Screen\Fields\RichText;
 use CmsOrbit\Core\Screen\Fields\Select;
 use CmsOrbit\Core\Screen\Sight;
 use CmsOrbit\Core\Screen\TD;
@@ -43,7 +43,7 @@ class PopupEntity extends DocumentEntity
     {
         return [
             Input::make('title')->title(__('Title'))->required(),
-            Quill::make('content')->title(__('Content')),
+            RichText::make('content')->title(__('Content')),
             DateTimer::make('started_at')
                 ->title(__('Started at'))
                 ->enableTime()
