@@ -15,11 +15,20 @@
 ## 설치
 
 ```bash
-composer require cms-orbit/popup:^4.0@beta
+composer require cms-orbit/popup:^4.0
 php artisan migrate
+php artisan orbit:frontend-sync   # orbit:install 직후라면 생략 가능
+npm run dev                       # OrbitPopups 컴포넌트 개발 시
 ```
 
-패키지는 `cms-orbit/core`를 의존하며, 설치 후 `Documents` 섹션에 팝업 엔티티가 자동 등록됩니다.
+`cms-orbit/core`가 먼저 설치·설정(`orbit:install`)되어 있어야 합니다.
+
+## Laravel Boost
+
+이 패키지는 `resources/boost/guidelines/popup.md`, `resources/boost/skills/popup-development/`를 제공합니다.
+
+- Boost **최초 설정**: 호스트에서 `php artisan boost:install` 1회
+- **이후**: `orbit:install` / `orbit:sync`가 이 패키지를 Boost에 등록하고 `boost:update` 실행 (Boost가 이미 설정된 경우)
 
 ## 호스트 설정
 

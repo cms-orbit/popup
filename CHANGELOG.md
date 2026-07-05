@@ -11,6 +11,7 @@
 ### 개선
 
 - README **호스트 설정** 표를 추가해 필수 작업(`migrate`, `orbit:frontend-sync`, `<OrbitPopups />` 1줄)과 불필요한 수동 라우트 편집을 구분했습니다.
+- README에 Laravel Boost 연동과 설치 버전(`^4.0`)을 정리했습니다.
 - `cms-orbit/core` `4.0.0` 정식 릴리스에 맞춰 의존성을 정렬했습니다.
 
 ## 4.0.0-beta4 - 2026-07-04
