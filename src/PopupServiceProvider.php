@@ -38,7 +38,7 @@ class PopupServiceProvider extends OrbitServiceProvider
 
     public function boot(): void
     {
-        Orbit::registerSection('documents', 'bs.file-earmark-text', __('Documents'), 5000);
+        Orbit::registerSection('documents', 'bs.file-earmark-text', fn () => __('Documents'), 5000);
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
