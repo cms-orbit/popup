@@ -1,6 +1,6 @@
 {
     "name": "cms-orbit/popup",
-    "version": "4.0.3",
+    "version": "4.1.0",
     "description": "CMS Orbit popup: document-based popup content type for the Orbit admin engine.",
     "keywords": [
         "laravel",
@@ -12,8 +12,8 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^8.3",
-        "cms-orbit/core": "^4.1",
+        "php": "^8.4",
+        "cms-orbit/core": "^4.4",
         "laravel/framework": "^11.0 || ^12.0 || ^13.0"
     },
     "require-dev": {
